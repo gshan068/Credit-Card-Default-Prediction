@@ -4,12 +4,14 @@ Machine learning and artificial intelligence are popular tools in financial anal
 In this project, we evaluated three machine learning algo- rithms: K-Nearest Neighbors, Logistic Regression, and Neu- ral Network, tested the impact of stratified cross-validation on the performance, and analyzed the contributions of fea- tures in predicting credit card default. We concluded that stratification has limited in improving the performance, and Neural Network outperformed other models. The findings and interpretation of our models can help financial institu- tions understand the default formation and predict it earlier.
 
 
+
 DATA:
 A. Exploratory Data Analysis
 This data set has 30000 instances and 23 features. Data Types include 4 categorical data and 19 numerical data. First 5 features summarized the demographic information of bank clients, and the rest 18 features are the historical payment information. A brief description of each features showing in TABLE I below. Our goal is to predict credit card default by using these features. No missing value detected for this dataset, so handling missing will not be performed in data preprocessing. However, we discovered data imbalance for the predict variable which indicates healthy credit is a lot more than credit default.
 
 B. Data Preprocessing and Feature Engineering
 The ID variable in the dataset is solely used to identify rows and has no contribution to the default predictions. As a result, we removed this column for simplifying analysis and modeling. The default payment next month is our dependent variable. The rest of the 23 variables are independent. Since many of the features are numerical values with different units, we performed normalization to our data using Min- MaxScaler from sklearn.
+
 
 
 RESULTS:
